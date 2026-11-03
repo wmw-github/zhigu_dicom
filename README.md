@@ -6,7 +6,7 @@
 
 主界面基于 PyQt5 + VTK，AI 推理基于 ONNX Runtime，DICOM 解析基于 pydicom（含 JPEG-LS 支持）。
 
-**官网**：<https://www.zhigu100.com>
+**官网**：<http://www.zhigu100.com>
 
 > **免责声明**：本软件（包括其 AI 模块）输出的所有结果仅供医学研究与临床辅助参考，
 > **不构成诊断依据**，不能替代执业医师的专业判断。任何临床使用及其后果由使用者自行承担。
@@ -174,4 +174,4 @@ python _release_selfcheck.py
 
 ## 相关链接
 
-- 官网：<https://www.zhigu100.com>
+- 官网：<http://www.zhigu100.com>
