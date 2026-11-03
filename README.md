@@ -6,10 +6,23 @@
 
 主界面基于 PyQt5 + VTK，AI 推理基于 ONNX Runtime，DICOM 解析基于 pydicom（含 JPEG-LS 支持）。
 
+**官网**：<https://www.zhigu100.com>
+
 > **免责声明**：本软件（包括其 AI 模块）输出的所有结果仅供医学研究与临床辅助参考，
 > **不构成诊断依据**，不能替代执业医师的专业判断。任何临床使用及其后果由使用者自行承担。
 
 ---
+
+## 界面预览
+
+| | |
+|---|---|
+| ![CT 四窗阅片](docs/screenshots/ct_4pane.jpg) | ![三维重建](docs/screenshots/ct_3d.jpg) |
+| *CT 四窗：轴/冠/矢 MPR + 三维重建联动阅片* | *骨骼三维重建（体渲染 + 骨折缝增强叠加）* |
+| ![脊柱拼接](docs/screenshots/spine_stitch.jpg) | ![X 线 AI](docs/screenshots/xray_ai.jpg) |
+| *全脊柱 X 线自动拼接，Cobb 角测量* | *X 线 AI 骨折检测，置信度标注与工具栏* |
+| ![MRA 三维](docs/screenshots/mra_3d.jpg) | |
+| *颅脑 MRA 血管三维重建（可以去骨的 VR）* | |
 
 ## 功能特性
 
@@ -158,3 +171,7 @@ python _release_selfcheck.py
 ⚠ **重要**：PyQt5 为 GPL-3.0 / 商业双许可。分发链接 PyQt5 的二进制（打包成品）
 需要满足 GPL-3.0 对组合作品的要求，或持有 Riverbank/Qt 商业许可；
 将本项目（Apache-2.0）纳入 GPL-3.0 作品分发是兼容的。详见 `NOTICE` 中的说明。
+
+## 相关链接
+
+- 官网：<https://www.zhigu100.com>
