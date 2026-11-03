@@ -1,0 +1,9 @@
+{
+  "name": "com.zhigu.bridge",
+  "description": "知骨影像 · 网页取图桥接（stdin/stdout，不经网络栈）",
+  "path": "C:\\path\\to\\zhigu_dicom\\web_bridge_native.bat",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://enemdgbbndekeeihllpbikeifjnlefmj/"
+  ]
+}

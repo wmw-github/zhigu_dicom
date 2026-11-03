@@ -1,0 +1,54 @@
+{
+  "manifest_version": 3,
+  "name": "知骨影像 · 网页取图",
+  "version": "1.5.0",
+  "description": "在云影像/内网 PACS 网页上显示一个按钮，一键把当前检查的 DICOM 送到本机「知骨影像」打开。",
+  "permissions": ["storage", "nativeMessaging", "cookies"],
+  "host_permissions": ["http://127.0.0.1/*", "http://localhost/*", "http://[::1]/*", "http://*/*", "https://*/*"],
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtLG4sW1K2Ye3B97YjVzXKXYFHv+jsKuv6ceG1xhBGGewj1i7ll7imzVFKMnNIk9ZFuNzZpX35fEMh3U44PL88coJctt/YyE6MXJDcgjHOJMYw3be+/wAsRNipvG497Arx4ObqnRh0GXdv52Klmf+4CGLabTLz2fh10xfgq+PLsPOGbLO05FPK2K9z9npG3dmBmd2T5dfIkuCAHuLXDQwCfuu+YXwaWmjOP5cxjmZp2teI0uoq2xeFw+/yxX/w1/NxQ0+bF7OYoAl7gl85z6Bk0v9pni7C1me7foyh8XR0bYCRRRmyotaHqov2k70NlHjGHTpFEkYEee1q+41lJVnawIDAQAB",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["inject.js"],
+      "run_at": "document_start",
+      "world": "MAIN",
+      "all_frames": true
+    },
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["boot.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    },
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["inject.js"],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ],
+  "action": {
+    "default_title": "把当前影像送到知骨影像",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+}

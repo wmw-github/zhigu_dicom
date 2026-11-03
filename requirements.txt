@@ -1,0 +1,16 @@
+# Zhigu DICOM runtime dependencies
+# Python 3.8+ (the original product targets Windows 7 with embedded CPython 3.8)
+#
+# Install:  pip install -r requirements.txt
+
+PyQt5>=5.15
+numpy
+scipy
+vtk>=9.1
+pydicom
+python-gdcm        # JPEG-LS transfer syntax decoding
+onnxruntime
+opencv-python
+Pillow
+openpyxl
+pypinyin

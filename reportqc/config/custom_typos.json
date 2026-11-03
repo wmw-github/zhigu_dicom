@@ -1,0 +1,138 @@
+{
+  "避": {
+    "correction": "壁",
+    "severity": "high"
+  },
+  "粘膜": {
+    "correction": "黏膜",
+    "severity": "medium"
+  },
+  "工状腺": {
+    "correction": "甲状腺",
+    "severity": "high"
+  },
+  "工状旁腺": {
+    "correction": "甲状旁腺",
+    "severity": "high"
+  },
+  "影象": {
+    "correction": "影像",
+    "severity": "high"
+  },
+  "照影": {
+    "correction": "造影",
+    "severity": "high"
+  },
+  "肿溜": {
+    "correction": "肿瘤",
+    "severity": "high"
+  },
+  "血馆": {
+    "correction": "血管",
+    "severity": "high"
+  },
+  "种经": {
+    "correction": "神经",
+    "severity": "high"
+  },
+  "肺业": {
+    "correction": "肺叶",
+    "severity": "high"
+  },
+  "工能": {
+    "correction": "功能",
+    "severity": "high"
+  },
+  "扫苗": {
+    "correction": "扫描",
+    "severity": "medium"
+  },
+  "增呛": {
+    "correction": "增强",
+    "severity": "medium"
+  },
+  "饱胀": {
+    "correction": "囊肿",
+    "severity": "medium"
+  },
+  "节结": {
+    "correction": "结节",
+    "severity": "medium"
+  },
+  "浸泣": {
+    "correction": "浸润",
+    "severity": "medium"
+  },
+  "农肿": {
+    "correction": "脓肿",
+    "severity": "medium"
+  },
+  "计液": {
+    "correction": "积液",
+    "severity": "medium"
+  },
+  "严症": {
+    "correction": "炎症",
+    "severity": "medium"
+  },
+  "左册": {
+    "correction": "左侧",
+    "severity": "medium"
+  },
+  "右册": {
+    "correction": "右侧",
+    "severity": "medium"
+  },
+  "清淅": {
+    "correction": "清晰",
+    "severity": "medium"
+  },
+  "模湖": {
+    "correction": "模糊",
+    "severity": "medium"
+  },
+  "正长": {
+    "correction": "正常",
+    "severity": "medium"
+  },
+  "气官": {
+    "correction": "器官",
+    "severity": "medium"
+  },
+  "肓肠": {
+    "correction": "盲肠",
+    "severity": "medium"
+  },
+  "肌建": {
+    "correction": "肌腱",
+    "severity": "high"
+  },
+  "低信": {
+    "correction": "低信号",
+    "severity": "high"
+  },
+  "等信": {
+    "correction": "等信号",
+    "severity": "high"
+  },
+  "跟建": {
+    "correction": "跟腱",
+    "severity": "high"
+  },
+  "跟踺": {
+    "correction": "跟腱",
+    "severity": "high"
+  },
+  "解决": {
+    "correction": "结节",
+    "severity": "medium"
+  },
+  "姐姐": {
+    "correction": "结节",
+    "severity": "medium"
+  },
+  "精简": {
+    "correction": "结节",
+    "severity": "medium"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "manifest_version": 3,
+  "name": "知骨影像 · 云影像另存本地",
+  "version": "1.1.0",
+  "description": "在云影像/内网 PACS 网页上显示一个绿色按钮，把当前检查的影像直接另存到本机磁盘（按 患者/序列 分文件夹），不需要打开知骨软件。",
+  "permissions": ["downloads", "storage", "cookies"],
+  "host_permissions": ["http://127.0.0.1/*", "http://localhost/*", "http://[::1]/*", "http://*/*", "https://*/*"],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["inject.js"],
+      "run_at": "document_start",
+      "world": "MAIN",
+      "all_frames": true
+    },
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["boot.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    },
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["inject.js"],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ],
+  "action": {
+    "default_title": "把当前云影像另存到本地",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+}

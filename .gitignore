@@ -1,0 +1,53 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+
+# ---- Embedded runtime / binaries (not distributed) ----
+pyenv/
+*.dll
+# python3.dll is the CPython stable-ABI forwarder (PSF license, ~60 KB).
+# It must sit in the app root for embedded runtimes whose python.exe dir
+# does not carry it; without it PyQt5/cv2 segfault on import.
+!python3.dll
+python.cat
+*.exe
+
+# ---- AI model weights (see xray/app/models/README.md) ----
+*.onnx
+*.pth
+*.pt
+
+# ---- Runtime data & user content ----
+debug_output/
+feedback_images/
+xray/app/data/
+xray/app/sys/
+reportqc/config/report_qc.db
+*.db
+*.sqlite
+
+# ---- License activation data ----
+license.dat
+
+# ---- Generated C sources (Cython build artifacts) ----
+license.c
+
+# ---- Logs ----
+*.log
+error_log.txt
+t4.log
+install_failed.log
+
+# ---- Patch/update workspace ----
+_patch/
+*.zip
+
+# ---- Editor / OS junk ----
+.idea/
+.vscode/
+*.swp
+Thumbs.db
+Desktop.ini
+.DS_Store
